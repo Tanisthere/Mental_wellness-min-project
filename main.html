@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Ease Care site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="maincss/main.css">
+    <link rel="stylesheet" href="maincss/home.css">
+    <link rel="stylesheet" href="maincss/events.css">
+    <link rel="stylesheet" href="maincss/article.css">
+    <link rel="stylesheet" href="maincss/Appointment.css">
+    <link rel="stylesheet" href="maincss/aboutus.css">
+    <link rel="stylesheet" href="maincss/therapists.css">
+</head>
+<body>
+    <div id="main">
+        <div id="Home">
+            <div id="navbar">
+                <img src="/images/logo.png" alt="Logo">
+                <div id="navbar-part">
+                    <a href="#Home">Home</a>
+                    <a href="#Article">Articles</a>
+                    <a href="#Appointment">Appointment</a>
+                    <a href="#Therapists">Therapists</a>
+                    <a href="#Events">Events</a>
+                    <a href="#AboutUs">AboutUs</a>
+                    <i class="ri-menu-3-fill"></i>
+
+                </div>
+            </div>
+            <div id="homepage">
+                <div id="lefthomepage">
+                    <h1>"<span>Healing</span></h1>
+                    <h1>  begins with a single step toward </h1>
+                    <h1>understanding yourself."</h1>
+                    <p>At MindEaseCare, we believe that peace of mind is the foundation of a healthy life.<br>Together, we nurture your mental well-being, one mindful step at a time.</p>
+                    <a href="#Article"><button type="button">Click here to Explore us</button></a>
+                </div>
+              
+                
+                <div id="righthomepage">
+                  <a href="#Article"><div id="card1">
+                    <div class="card1">
+                      <p>Article</p>
+                        
+                    </div>
+                </div></a>
+                <a href="#Appointment"><div id="card2">
+                  <div class="card1">
+                    <p>Appointment</p>
+                  </div>
+              </div></a>
+              <a href="#Events"><div id="card3">
+                <div class="card1">
+                  <p>Events</p>
+                </div>
+            </div></a>
+            
+            </div>
+        </div>    
+            
+        <div id="Article">
+          <div class="container">
+            <h1>Mental Health & Wellness News</h1>
+    
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search News...">
+                <button onclick="searchNews()">Search</button>
+            </div>
+    
+            <!-- Button Group -->
+            <div class="button-group">
+                <button onclick="fetchNews()" id="refresh-btn">Refresh</button>
+                <button onclick="fetchMentalHealthNews()">Mental Health</button>
+            </div>
+    
+            <!-- Horizontal Scrolling News Section -->
+            <div id="news-container" class="news-slider"></div>
+        </div>
+        </div>
+        
+        <div id="Appointment">
+          <h1>Take care of your</h1>
+          <h1><span id="health">health </span>and <span id="happy">happiness</span></h1>
+          <h1>with us.</h1>
+          <p>"Your health is important to us",online doctor consultation,<br> your Doctor is just one click away.</p>
+          <a href="Book_Appointment.html"><Button id="appointment">Book Appointment</Button></a>
+   
+        </div>
+        <div id="Therapists">
+          <h1>Meet Our Expert Therapists</h1>
+
+    <div class="expert-section">
+        <!-- Therapist 1 -->
+        <div class="therapist-card" onclick="showDetails('therapist1')">
+            <img src="https://cdn.pixabay.com/photo/2024/09/03/15/21/ai-generated-9019520_1280.png" alt="Therapist 1">
+            <div class="therapist-info">
+                <h3>Dr. John Doe</h3>
+                <p>Clinical Psychologist</p>
+            </div>
+        </div>
+
+        <!-- Therapist 2 -->
+        <div class="therapist-card" onclick="showDetails('therapist2')">
+            <img src="https://via.placeholder.com/250x350" alt="Therapist 2">
+            <div class="therapist-info">
+                <h3>Dr. Jane Smith</h3>
+                <p>Behavioral Therapist</p>
+            </div>
+        </div>
+
+        <!-- Therapist 3 -->
+        <div class="therapist-card" onclick="showDetails('therapist3')">
+            <img src="https://via.placeholder.com/250x350" alt="Therapist 3">
+            <div class="therapist-info">
+                <h3>Dr. Michael Lee</h3>
+                <p>Marriage Counselor</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Therapist Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalDetails">
+                <!-- Therapist details will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div id="Events"></div>
+        <div id="AboutUs"></div>
+    </div>
+    <script src="javas/article.js"></script>
+    <script src="javas/therpist.js"></script>
+</body>
+</html>
+
+<!-- <div class="slider">
+    <div class="image-container">
+      <img  width="1000px" height="auto"src="https://img.freepik.com/free-photo/covid-preventing-virus-healthcare-workers-vaccination-concept-closeup-satisfied-pleased-d_1258-107993.jpg?t=st=1725860053~exp=1725863653~hmac=43d5f1c5c82f275462219a21ff6711b678e962e2d0e98d541876b99b89f8d620&w=1380" class="slide" />
+      <img src="https://img.freepik.com/free-photo/image-asian-woman-doctor-nurse-found-smth-looking-through-magnifying-glass-stare-surprised_1258-106223.jpg?t=st=1725859922~exp=1725863522~hmac=90d5b9953c0089dbce5748d04aa21342f954c68d83f83190cef34d99f723c96c&w=1060" class="slide" />
+      <img src="https://img.freepik.com/free-photo/medium-shot-doctors-wearing-protective-equipment_23-2149994405.jpg?t=st=1725859838~exp=1725863438~hmac=42849695537bba5a56d134091b88f3c2a983cf03a8159eb32f54daa8f0227af1&w=1060" class="slide" />
+    </div>
+    <div class="buttons">
+      <a href="#slide-1" class="btn"></a>
+      <a href="#slide-2" class="btn"></a>
+      <a href="#slide-3" class="btn"></a>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const imageContainer = document.querySelector('.image-container');
+
+    function showNextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      const newLeft = -currentIndex * 1000; // each slide is 500px wide
+      imageContainer.style.left = newLeft + 'px';
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+  </script> -->
+
+  <!-- .slider {
+    width: 100%px;
+    height: 100vh;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .image-container {
+    width: 4500px;
+    background-color: pink;
+    height: 300px;   
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    display: flex;
+    transition: left 1s;
+  }
+  .image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .slide {
+    width: 1000px;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+</style> -->
