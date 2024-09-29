@@ -1,5 +1,5 @@
  ****WELCOME****
-_**Follow to steps given below to integrate this project succesfully in youy device**_
+_**Follow to steps given below to integrate this project succesfully in youy  device**_
 i) Watch video: https://www.youtube.com/watch?v=-rcRf7yswfM ;uptill : 6:59 and accordingly follow steps. _(Keep developers window open after creating tokens open in side tab)_
 ii) Download the zip file
 iii) Replace client id , client secret , refresh token id , access token with yours generated
